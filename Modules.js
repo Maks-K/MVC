@@ -1,5 +1,5 @@
 var modules = [
-    "Text", "Button", "AdvancedButton"
+        "AnimationManager", "Text", "Button", "AdvancedButton"
 ],
     createdModules = {},
     i, componenets, module;

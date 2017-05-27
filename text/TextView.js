@@ -12,12 +12,12 @@ TextView.addToProto = {
         document.body.appendChild(this.paragraph);
         this.updateTextColor();
 
-        this.cont = layering.addContainer("layer2");
+        this.cont = createdModules.AnimationManager.view.addContainer("layer2");
         this.falconH = PIXI.Sprite.fromImage('falcon-heavy-render.png');
         this.falconH.scale.set(0.05);
         this.falconH.anchor.set(0.5);
-        this.falconH.x = app.renderer.width / 2 + 100;
-        this.falconH.y = app.renderer.height / 2;
+        this.falconH.x = 400;
+        this.falconH.y = 300;
         this.falconH.rotation = 200;
 
 
