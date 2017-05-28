@@ -1,14 +1,16 @@
 function TextController(moduleName) {
     TextController.parent.constructor.call(this, moduleName);
-
-    this.on({
-        "notify:buttonClicked": this.onButtonClicked,
-        "view:textColorChanged": this.onTextColorChanged
-    });
-
 }
 
 TextController.addToProto = {
+    setupEvents: function () {
+        var me = this;
+        me.on({
+            "notify:buttonClicked": me.onButtonClicked,
+            "view:textColorChanged": me.onTextColorChanged
+        });
+    },
+
     onButtonClicked: function () {
         this.view.updateTextColor()
     },

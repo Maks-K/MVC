@@ -12,7 +12,7 @@ TextView.addToProto = {
         document.body.appendChild(this.paragraph);
         this.updateTextColor();
 
-        this.cont = createdModules.AnimationManager.view.addContainer("layer2");
+        this.cont = utils.addContainer("layer2");
         this.falconH = PIXI.Sprite.fromImage('falcon-heavy-render.png');
         this.falconH.scale.set(0.05);
         this.falconH.anchor.set(0.5);

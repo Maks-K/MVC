@@ -15,7 +15,7 @@ ButtonView.addToProto = {
 
         document.body.appendChild(button);
 
-        this.cont = createdModules.AnimationManager.view.addContainer("layer1");
+        this.cont = utils.addContainer("layer1");
         this.falconH = PIXI.Sprite.fromImage('falcon-heavy-render.png');
         this.falconH.scale.set(0.05);
         this.falconH.anchor.set(0.5);

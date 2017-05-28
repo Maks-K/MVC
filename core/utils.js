@@ -13,5 +13,8 @@ var utils = {
         }
         console.dir(child);
         return child
+    },
+    addContainer: function (name) {
+        return createdModules.AnimationManager.view.addContainer(name);
     }
 };
