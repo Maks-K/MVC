@@ -1,11 +1,11 @@
 function AnimationManagerView(moduleName) {
     AnimationManagerView.parent.constructor.call(this, moduleName);
-    this.layers = ["layer1", "layer2"];
+    this.layers = CONFIG.layers;
 }
 
 AnimationManagerView.addToProto = {
     init: function () {
-        this.app = new PIXI.Application(800, 600, {transparent : true});
+        this.app = new PIXI.Application(CONFIG.viewport.width, CONFIG.viewport.height, {transparent : true});
         this.globalContainer = new PIXI.Container();
         document.body.appendChild(this.app.view);
 
